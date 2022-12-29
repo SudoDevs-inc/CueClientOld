@@ -1,0 +1,11 @@
+{
+  "Name": "MiddleClick",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "Mode": "ENDRPEARL"
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

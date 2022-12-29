@@ -1,0 +1,14 @@
+{
+  "Name": "Coords",
+  "Toggle": false,
+  "HudXPos": 114.0,
+  "HudYPos": 114.0,
+  "HudWidth": 0.0,
+  "HudHeight": 0.0,
+  "Settings": {
+    "Size": 1.0
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

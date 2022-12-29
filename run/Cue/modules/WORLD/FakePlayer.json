@@ -1,0 +1,21 @@
+{
+  "Name": "FakePlayer",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "Moving": false,
+    "MoveDelay": 75,
+    "Popping": true,
+    "Particle": true,
+    "Sound": false,
+    "DistanceCheck": true,
+    "Distance": 15,
+    "Inventory": true,
+    "InventoryMode": "NORMAL",
+    "Gapple": true,
+    "GappleDelay(Secs)": 5
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

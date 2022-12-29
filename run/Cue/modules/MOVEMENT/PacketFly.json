@@ -1,0 +1,16 @@
+{
+  "Name": "PacketFly",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "Mode": "FACTOR",
+    "Factor": 1.2,
+    "Bounds": "DOWN",
+    "Phase": "NCP",
+    "Conceal": false,
+    "AntiKick": false
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

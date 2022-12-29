@@ -1,0 +1,10 @@
+{
+  "Name": "ConstFly",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "Name": "PacketMine",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "AntiNeededBlocks": false,
+    "Cancel": true
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

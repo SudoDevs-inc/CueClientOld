@@ -1,0 +1,41 @@
+{
+  "ClickGui": {
+    "Combat": {
+      "IsShowModules": true,
+      "X": 20.0,
+      "Y": 35.0
+    },
+    "Movement": {
+      "IsShowModules": true,
+      "X": 130.0,
+      "Y": 35.0
+    },
+    "Visual": {
+      "IsShowModules": true,
+      "X": 240.0,
+      "Y": 35.0
+    },
+    "World": {
+      "IsShowModules": true,
+      "X": 350.0,
+      "Y": 35.0
+    },
+    "Function": {
+      "IsShowModules": true,
+      "X": 460.0,
+      "Y": 35.0
+    },
+    "Client": {
+      "IsShowModules": true,
+      "X": 570.0,
+      "Y": 35.0
+    }
+  },
+  "HudEditor": {
+    "Hud": {
+      "IsShowModules": true,
+      "X": 20.0,
+      "Y": 35.0
+    }
+  }
+}

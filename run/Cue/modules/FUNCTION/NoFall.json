@@ -1,0 +1,13 @@
+{
+  "Name": "NoFall",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "Mode": "Ncp",
+    "Speed": 5.0,
+    "Fall Distance": 5.0
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

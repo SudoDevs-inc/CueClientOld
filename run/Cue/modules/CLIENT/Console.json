@@ -1,0 +1,10 @@
+{
+  "Name": "Console",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true
+  },
+  "CommonSettings": {
+    "KeyBind": 25
+  }
+}

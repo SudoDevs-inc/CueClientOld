@@ -1,0 +1,14 @@
+{
+  "Name": "BlockHighlight",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "Outline": true,
+    "FullBlock": true,
+    "OutlineWidth": 1.5,
+    "Alpha": 55
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "Name": "Replenish",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "Percent": 1.0,
+    "Delay": 100.0,
+    "Wait": false
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

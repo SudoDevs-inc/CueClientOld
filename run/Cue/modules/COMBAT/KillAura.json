@@ -1,0 +1,26 @@
+{
+  "Name": "KillAura",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "Range": 5.5,
+    "Delay": 4,
+    "RandomDelay": false,
+    "Random Delay": 4,
+    "Iterations": 1,
+    "Wall Range": 3.5,
+    "TicksExisted": 20,
+    "HitDelay": true,
+    "PacketHit": false,
+    "SwimArm": true,
+    "Rotate": true,
+    "ThroughWalls": true,
+    "PlayerOnly": true,
+    "WeaponOnly": true,
+    "SwitchWeapon": false,
+    "CurrentWeapon": "NONE"
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

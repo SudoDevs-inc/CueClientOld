@@ -1,0 +1,12 @@
+{
+  "Name": "Step",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "Mode": "Normal",
+    "Height": 1.0
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

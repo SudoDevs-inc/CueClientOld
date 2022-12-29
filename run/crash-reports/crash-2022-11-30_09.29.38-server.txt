@@ -1,0 +1,129 @@
+---- Minecraft Crash Report ----
+// Who set us up the TNT?
+
+Time: 11/30/22 9:29 AM
+Description: Sending packet
+
+java.lang.ClassCastException: net.minecraft.network.play.server.SPacketSoundEffect cannot be cast to cn.origin.cube.inject.client.ICPacketPlayer
+	at cn.origin.cube.module.modules.function.NoFall.onSend(NoFall.kt:49)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_20_NoFall_onSend_Send.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraft.network.NetworkManager.handler$onSendPacketPre$zza000(NetworkManager.java:533)
+	at net.minecraft.network.NetworkManager.sendPacket(NetworkManager.java)
+	at net.minecraft.network.NetHandlerPlayServer.sendPacket(NetHandlerPlayServer.java:882)
+	at net.minecraft.server.management.PlayerList.sendToAllNearExcept(PlayerList.java:933)
+	at net.minecraft.world.ServerWorldEventHandler.playSoundToAllNearExcept(ServerWorldEventHandler.java:58)
+	at net.minecraft.world.World.playSound(World.java:1130)
+	at net.minecraft.entity.Entity.playSound(Entity.java:1097)
+	at net.minecraft.entity.EntityLiving.playLivingSound(EntityLiving.java:202)
+	at net.minecraft.entity.EntityLiving.onEntityUpdate(EntityLiving.java:214)
+	at net.minecraft.entity.Entity.onUpdate(Entity.java:389)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2096)
+	at net.minecraft.entity.EntityLiving.onUpdate(EntityLiving.java:295)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1996)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:832)
+	at net.minecraft.world.World.updateEntity(World.java:1958)
+	at net.minecraft.world.World.updateEntities(World.java:1762)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:613)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:767)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:668)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:185)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at cn.origin.cube.module.modules.function.NoFall.onSend(NoFall.kt:49)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_20_NoFall_onSend_Send.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraft.network.NetworkManager.handler$onSendPacketPre$zza000(NetworkManager.java:533)
+	at net.minecraft.network.NetworkManager.sendPacket(NetworkManager.java)
+
+-- Packet being sent --
+Details:
+	Packet class: net.minecraft.network.play.server.SPacketSoundEffect
+Stacktrace:
+	at net.minecraft.network.NetHandlerPlayServer.sendPacket(NetHandlerPlayServer.java:882)
+	at net.minecraft.server.management.PlayerList.sendToAllNearExcept(PlayerList.java:933)
+	at net.minecraft.world.ServerWorldEventHandler.playSoundToAllNearExcept(ServerWorldEventHandler.java:58)
+	at net.minecraft.world.World.playSound(World.java:1130)
+	at net.minecraft.entity.Entity.playSound(Entity.java:1097)
+	at net.minecraft.entity.EntityLiving.playLivingSound(EntityLiving.java:202)
+	at net.minecraft.entity.EntityLiving.onEntityUpdate(EntityLiving.java:214)
+	at net.minecraft.entity.Entity.onUpdate(Entity.java:389)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2096)
+	at net.minecraft.entity.EntityLiving.onUpdate(EntityLiving.java:295)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1996)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:832)
+	at net.minecraft.world.World.updateEntity(World.java:1958)
+
+-- Entity being ticked --
+Details:
+	Entity Type: minecraft:cow (net.minecraft.entity.passive.EntityCow)
+	Entity ID: 170
+	Entity Name: Cow
+	Entity's Exact location: 59.67, 64.00, 230.72
+	Entity's Block location: World: (59,64,230), Chunk: (at 11,4,6 in 3,14; contains blocks 48,0,224 to 63,255,239), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1762)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:613)
+
+-- Affected level --
+Details:
+	Level name: New World
+	All players: 1 total; [EntityPlayerMP['Player378'/315, l='New World', x=61.12, y=71.00, z=244.96]]
+	Chunk stats: ServerChunkCache: 625 Drop: 0
+	Level seed: -6553525105758586355
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (20,64,256), Chunk: (at 4,4,0 in 1,16; contains blocks 16,0,256 to 31,255,271), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 22123 game time, 22123 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 26056 (now: false), thunder time: 3908 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:767)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:668)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:185)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Thread.java:748)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_202, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 311225440 bytes (296 MB) / 985137152 bytes (939 MB) up to 1875378176 bytes (1788 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP 9.42 Powered by Forge 14.23.5.2860 5 mods loaded, 5 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID        | Version      | Source                                                     | Signature |
+	|:------ |:--------- |:------------ |:---------------------------------------------------------- |:--------- |
+	| LCHIJA | minecraft | 1.12.2       | minecraft.jar                                              | None      |
+	| LCHIJA | mcp       | 9.42         | minecraft.jar                                              | None      |
+	| LCHIJA | FML       | 8.0.99.99    | forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12-recomp.jar | None      |
+	| LCHIJA | forge     | 14.23.5.2860 | forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12-recomp.jar | None      |
+	| LCHIJA | cue       | 0.1          | main                                                       | None      |
+
+	Loaded coremods (and transformers): 
+Cube (unknown)
+  
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player378'/315, l='New World', x=61.12, y=71.00, z=244.96]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

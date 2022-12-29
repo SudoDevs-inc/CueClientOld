@@ -1,0 +1,11 @@
+{
+  "Name": "AutoConfig",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "Server": "TwoBee"
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

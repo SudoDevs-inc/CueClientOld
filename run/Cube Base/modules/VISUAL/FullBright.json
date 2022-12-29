@@ -1,0 +1,12 @@
+{
+  "Name": "FullBright",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "Mode": "GAMMA",
+    "Gamma": 800.0
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

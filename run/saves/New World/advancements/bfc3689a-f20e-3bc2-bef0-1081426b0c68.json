@@ -1,0 +1,28 @@
+{
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2022-12-10 15:17:34 -0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_a_mob": {
+    "criteria": {
+      "skeleton": "2022-12-10 15:17:34 -0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "skeleton": "2022-12-10 15:17:34 -0800",
+      "zombie": "2022-12-10 15:17:48 -0800",
+      "creeper": "2022-12-10 15:18:13 -0800"
+    },
+    "done": false
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "savanna": "2022-12-10 15:15:20 -0800"
+    },
+    "done": false
+  }
+}

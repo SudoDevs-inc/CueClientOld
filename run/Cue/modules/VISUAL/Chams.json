@@ -1,0 +1,18 @@
+{
+  "Name": "Chams",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "Pulse": false,
+    "Pulse Max": 1.5,
+    "Pulse Min": 1.0,
+    "Pulse Speed": 4.0,
+    "Pulse W": 8.0,
+    "Lines": true,
+    "OutlineWidth": 40.0,
+    "Alpha": 200
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

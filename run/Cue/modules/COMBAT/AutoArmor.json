@@ -1,0 +1,10 @@
+{
+  "Name": "AutoArmor",
+  "Toggle": true,
+  "Settings": {
+    "Visible": true
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

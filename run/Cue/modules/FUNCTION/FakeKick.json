@@ -1,0 +1,11 @@
+{
+  "Name": "FakeKick",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "KickMessage": "\u0026c\u0026lYou has been banned form server!"
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

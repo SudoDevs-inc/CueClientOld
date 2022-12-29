@@ -1,0 +1,11 @@
+{
+  "Name": "Sprint",
+  "Toggle": true,
+  "Settings": {
+    "Visible": true,
+    "Legit": false
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

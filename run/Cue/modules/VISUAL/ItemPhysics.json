@@ -1,0 +1,11 @@
+{
+  "Name": "ItemPhysics",
+  "Toggle": true,
+  "Settings": {
+    "Visible": true,
+    "Scale": 0.48386756181716917
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

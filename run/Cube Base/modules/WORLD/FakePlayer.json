@@ -1,0 +1,11 @@
+{
+  "Name": "FakePlayer",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "name": "FakePlayer"
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

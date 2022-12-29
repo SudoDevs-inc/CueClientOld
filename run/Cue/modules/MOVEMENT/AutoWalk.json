@@ -1,0 +1,10 @@
+{
+  "Name": "AutoWalk",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

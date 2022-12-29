@@ -1,0 +1,11 @@
+{
+  "Name": "AutoBowRelease",
+  "Toggle": true,
+  "Settings": {
+    "Visible": true,
+    "Ticks": 3
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "Name": "ViewLock",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "Pitch": 1.0,
+    "Yaw": 1.0,
+    "Mode": "Yaw"
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

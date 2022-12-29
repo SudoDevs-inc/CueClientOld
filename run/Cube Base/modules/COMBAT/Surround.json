@@ -1,0 +1,12 @@
+{
+  "Name": "Surround",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "Packet": true,
+    "Rotate": false
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

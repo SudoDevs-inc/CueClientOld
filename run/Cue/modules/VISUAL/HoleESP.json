@@ -1,0 +1,22 @@
+{
+  "Name": "HoleESP",
+  "Toggle": true,
+  "Settings": {
+    "Visible": true,
+    "Hole Radius": 8.0,
+    "Pulse": true,
+    "Pulse Max": 0.33770636,
+    "Pulse Min": 0.0,
+    "Pulse Speed": 2.1841593,
+    "Pulse W": 8.0,
+    "Obsidian Box": false,
+    "Obsidian Outline": true,
+    "Obsidian Outline Width": 1.0,
+    "Bedrock Box": false,
+    "Bedrock Outline": false,
+    "Bedrock Outline Width": 1.0
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

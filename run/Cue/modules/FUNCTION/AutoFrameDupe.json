@@ -1,0 +1,14 @@
+{
+  "Name": "AutoFrameDupe",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "ShulkersOnly": true,
+    "Range": 5,
+    "Turns": 1,
+    "Ticks": 10
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

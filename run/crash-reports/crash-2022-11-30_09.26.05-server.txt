@@ -1,0 +1,111 @@
+---- Minecraft Crash Report ----
+// Why did you do that?
+
+Time: 11/30/22 9:26 AM
+Description: Sending packet
+
+java.lang.NoClassDefFoundError: cn/origin/cube/inject/client/ICPacketPlayer
+	at cn.origin.cube.module.modules.function.NoFall.onSend(NoFall.kt:49)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_22_NoFall_onSend_Send.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraft.network.NetworkManager.handler$onSendPacketPre$zza000(NetworkManager.java:533)
+	at net.minecraft.network.NetworkManager.sendPacket(NetworkManager.java)
+	at net.minecraft.network.NetHandlerPlayServer.sendPacket(NetHandlerPlayServer.java:882)
+	at net.minecraft.server.management.PlayerChunkMapEntry.sendPacket(PlayerChunkMapEntry.java:227)
+	at net.minecraft.server.management.PlayerChunkMapEntry.update(PlayerChunkMapEntry.java:245)
+	at net.minecraft.server.management.PlayerChunkMap.tick(PlayerChunkMap.java:126)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:227)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:756)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:668)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:185)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: cn.origin.cube.inject.client.ICPacketPlayer
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 16 more
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:521)
+	at org.spongepowered.asm.mixin.transformer.Proxy.transform(Proxy.java:72)
+	at net.minecraft.launchwrapper.LaunchClassLoader.runTransformers(LaunchClassLoader.java:279)
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:176)
+	... 18 more
+Caused by: java.lang.NoClassDefFoundError: cn.origin.cube.inject.client.ICPacketPlayer is a mixin class and cannot be referenced directly
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:488)
+	... 21 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at cn.origin.cube.module.modules.function.NoFall.onSend(NoFall.kt:49)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_22_NoFall_onSend_Send.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraft.network.NetworkManager.handler$onSendPacketPre$zza000(NetworkManager.java:533)
+	at net.minecraft.network.NetworkManager.sendPacket(NetworkManager.java)
+
+-- Packet being sent --
+Details:
+	Packet class: net.minecraft.network.play.server.SPacketBlockChange
+Stacktrace:
+	at net.minecraft.network.NetHandlerPlayServer.sendPacket(NetHandlerPlayServer.java:882)
+	at net.minecraft.server.management.PlayerChunkMapEntry.sendPacket(PlayerChunkMapEntry.java:227)
+	at net.minecraft.server.management.PlayerChunkMapEntry.update(PlayerChunkMapEntry.java:245)
+	at net.minecraft.server.management.PlayerChunkMap.tick(PlayerChunkMap.java:126)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:227)
+
+-- Affected level --
+Details:
+	Level name: New World
+	All players: 1 total; [EntityPlayerMP['Player475'/317, l='New World', x=61.12, y=72.00, z=244.96]]
+	Chunk stats: ServerChunkCache: 625 Drop: 0
+	Level seed: -6553525105758586355
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (20,64,256), Chunk: (at 4,4,0 in 1,16; contains blocks 16,0,256 to 31,255,271), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 21886 game time, 21886 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 26293 (now: false), thunder time: 4145 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:756)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:668)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:185)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Thread.java:748)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_202, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 282830056 bytes (269 MB) / 1040711680 bytes (992 MB) up to 1875378176 bytes (1788 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP 9.42 Powered by Forge 14.23.5.2860 5 mods loaded, 5 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID        | Version      | Source                                                     | Signature |
+	|:------ |:--------- |:------------ |:---------------------------------------------------------- |:--------- |
+	| LCHIJA | minecraft | 1.12.2       | minecraft.jar                                              | None      |
+	| LCHIJA | mcp       | 9.42         | minecraft.jar                                              | None      |
+	| LCHIJA | FML       | 8.0.99.99    | forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12-recomp.jar | None      |
+	| LCHIJA | forge     | 14.23.5.2860 | forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12-recomp.jar | None      |
+	| LCHIJA | cue       | 0.1          | main                                                       | None      |
+
+	Loaded coremods (and transformers): 
+Cube (unknown)
+  
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player475'/317, l='New World', x=61.12, y=72.00, z=244.96]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

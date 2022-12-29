@@ -1,0 +1,18 @@
+{
+  "Name": "Crosshair",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "Length": 10.0,
+    "Part Width": 2.5,
+    "Gap": 6.1,
+    "Outline Width": 1.0,
+    "Dynamic": true,
+    "Attack Indicator": true,
+    "Fill": true,
+    "Outline": true
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

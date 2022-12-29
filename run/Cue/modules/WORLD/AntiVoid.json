@@ -1,0 +1,11 @@
+{
+  "Name": "AntiVoid",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "Mode": "Jump"
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

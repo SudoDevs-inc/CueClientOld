@@ -1,0 +1,14 @@
+{
+  "Name": "AntiKnockback",
+  "Toggle": true,
+  "Settings": {
+    "Visible": true,
+    "Horizontal": 0.0,
+    "Vertical": 0.0,
+    "Explosion": true,
+    "Velocity": true
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

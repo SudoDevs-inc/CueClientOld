@@ -1,0 +1,22 @@
+{
+  "Name": "ElytraFly",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "Mode": "CONTROL",
+    "AscendPitch": -45.0,
+    "DescendPitch": 45.0,
+    "LockPitch": true,
+    "LockedPitch": 0.0,
+    "CancelMotion": false,
+    "FlySpeed": 1.0,
+    "AscendSpeed": 1.0,
+    "DescendSpeed": 1.0,
+    "FallSpeed": 0.0,
+    "Takeoff": false,
+    "Timer": 0.2
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "Name": "Suicide",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "Mode": "NORMAL"
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

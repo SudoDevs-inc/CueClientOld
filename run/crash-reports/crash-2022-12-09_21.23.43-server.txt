@@ -1,0 +1,79 @@
+---- Minecraft Crash Report ----
+// Daisy, daisy...
+
+Time: 12/9/22 9:23 PM
+Description: Sending packet
+
+java.lang.ClassCastException: net.minecraft.network.play.server.SPacketEntityHeadLook cannot be cast to cn.origin.cube.inject.client.ICPacketPlayer
+	at cn.origin.cube.module.modules.function.NoFall.onSend(NoFall.kt:105)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_26_NoFall_onSend_Send.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraft.network.NetworkManager.handler$onSendPacketPre$zza000(NetworkManager.java:533)
+	at net.minecraft.network.NetworkManager.sendPacket(NetworkManager.java)
+	at net.minecraft.network.NetHandlerPlayServer.sendPacket(NetHandlerPlayServer.java:882)
+	at net.minecraft.entity.EntityTrackerEntry.sendPacketToTrackedPlayers(EntityTrackerEntry.java:338)
+	at net.minecraft.entity.EntityTrackerEntry.updatePlayerList(EntityTrackerEntry.java:295)
+	at net.minecraft.entity.EntityTracker.tick(EntityTracker.java:292)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:779)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:668)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:185)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at cn.origin.cube.module.modules.function.NoFall.onSend(NoFall.kt:105)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_26_NoFall_onSend_Send.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraft.network.NetworkManager.handler$onSendPacketPre$zza000(NetworkManager.java:533)
+	at net.minecraft.network.NetworkManager.sendPacket(NetworkManager.java)
+
+-- Packet being sent --
+Details:
+	Packet class: net.minecraft.network.play.server.SPacketEntityHeadLook
+Stacktrace:
+	at net.minecraft.network.NetHandlerPlayServer.sendPacket(NetHandlerPlayServer.java:882)
+	at net.minecraft.entity.EntityTrackerEntry.sendPacketToTrackedPlayers(EntityTrackerEntry.java:338)
+	at net.minecraft.entity.EntityTrackerEntry.updatePlayerList(EntityTrackerEntry.java:295)
+	at net.minecraft.entity.EntityTracker.tick(EntityTracker.java:292)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:779)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:668)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:185)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Thread.java:748)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_202, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 563557960 bytes (537 MB) / 1103101952 bytes (1052 MB) up to 1875378176 bytes (1788 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP 9.42 Powered by Forge 14.23.5.2860 5 mods loaded, 5 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID        | Version      | Source                                                     | Signature |
+	|:------ |:--------- |:------------ |:---------------------------------------------------------- |:--------- |
+	| LCHIJA | minecraft | 1.12.2       | minecraft.jar                                              | None      |
+	| LCHIJA | mcp       | 9.42         | minecraft.jar                                              | None      |
+	| LCHIJA | FML       | 8.0.99.99    | forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12-recomp.jar | None      |
+	| LCHIJA | forge     | 14.23.5.2860 | forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12-recomp.jar | None      |
+	| LCHIJA | cue       | 0.1          | main                                                       | None      |
+
+	Loaded coremods (and transformers): 
+Cube (unknown)
+  
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player608'/212, l='New World', x=176.51, y=82.00, z=229.30]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

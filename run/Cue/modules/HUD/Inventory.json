@@ -1,0 +1,14 @@
+{
+  "Name": "Inventory",
+  "Toggle": false,
+  "HudXPos": 100.0,
+  "HudYPos": 200.0,
+  "HudWidth": 0.0,
+  "HudHeight": 0.0,
+  "Settings": {
+    "Size": 1.0
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

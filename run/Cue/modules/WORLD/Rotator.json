@@ -1,0 +1,11 @@
+{
+  "Name": "Rotator",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "Speed": 5
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

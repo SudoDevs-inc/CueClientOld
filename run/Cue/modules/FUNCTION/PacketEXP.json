@@ -1,0 +1,12 @@
+{
+  "Name": "PacketEXP",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "TriggerMode": "RightClick",
+    "OnlyInHand": false
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

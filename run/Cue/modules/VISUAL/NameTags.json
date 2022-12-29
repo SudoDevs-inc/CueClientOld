@@ -1,0 +1,29 @@
+{
+  "Name": "NameTags",
+  "Toggle": true,
+  "Settings": {
+    "Visible": true,
+    "MutliThread": true,
+    "CFont": true,
+    "Y Offset": 0.0,
+    "X Offset": 0.9912534,
+    "Armor": true,
+    "Items": true,
+    "Heart": false,
+    "Sneak": false,
+    "Sneak Height": -1.0,
+    "Enchantments": false,
+    "Health Bar": false,
+    "Background": true,
+    "RoundedBackground": true,
+    "Radius": 1.0,
+    "Gradient Background": true,
+    "Outline Width": 1.0,
+    "Size": 1.3,
+    "Width": 0,
+    "Height": 0
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

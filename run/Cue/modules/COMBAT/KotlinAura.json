@@ -1,0 +1,17 @@
+{
+  "Name": "KotlinAura",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "TargetRange": 10.0,
+    "PlaceRange": 5.0,
+    "BreakRange": 5.0,
+    "minDamage": 6.0,
+    "maxSelfDamage": 8.0,
+    "packetBreak": true,
+    "onlySelf": true
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

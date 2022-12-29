@@ -1,0 +1,16 @@
+{
+  "Name": "FastPlace",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "Speed": 4,
+    "GhostFix": true,
+    "Block": true,
+    "Exp": true,
+    "FireWorks": true,
+    "Crystals": true
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

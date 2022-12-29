@@ -1,0 +1,19 @@
+{
+  "Name": "ESP",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "Mode": "TwoDee",
+    "Hunger": true,
+    "Health": true,
+    "healthValue": true,
+    "Box": true,
+    "Tag": true,
+    "Show current item": true,
+    "Local": false,
+    "3DAlpha": 0.7
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

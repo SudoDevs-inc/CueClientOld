@@ -1,0 +1,12 @@
+{
+  "Name": "Criticals",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "Mode": "PACKET",
+    "MoveCancel": false
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}

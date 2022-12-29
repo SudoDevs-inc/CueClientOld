@@ -1,0 +1,11 @@
+{
+  "Name": "BigPOV",
+  "Toggle": false,
+  "Settings": {
+    "Visible": true,
+    "Height": 5.0
+  },
+  "CommonSettings": {
+    "KeyBind": 0
+  }
+}
